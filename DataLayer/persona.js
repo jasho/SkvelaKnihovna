@@ -7,6 +7,7 @@
 
 	var sk = w.SK;
 
+	///////////////////////////////////////////////
 	// Constructs persona from the key-value pairs.
 	function Persona(persona) {
 		sk.Serializable.call(this);
@@ -27,8 +28,13 @@
 		this.relations = [];
 	}
 
+	//////////////
+	// Inheritance
 	Persona.prototype = new sk.Serializable();
 	Persona.prototype.constructor = Persona;
+	
+	//////////
+	// Methods
 	Persona.prototype.GetName = function() {
 		return this.name;
 	}
