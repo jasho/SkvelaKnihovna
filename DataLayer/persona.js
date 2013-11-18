@@ -1,5 +1,23 @@
 (function(w) {
-	
+
+	/////////
+	// Locals
+	var personaNextId = 1;
+
+	function getNextId() {
+		var newId = personaNextId;
+		personaNextId += 1;
+
+		return newId;
+	}
+
+	function setNextIdGen(proposedId) {
+		if (personaNextId < proposedId) {
+			personaNextId = proposedId;
+		}
+	}
+
+	/////////////////////
 	// Namespace ensuring
 	if (!w.SK) {
 		w.SK = {};
@@ -12,8 +30,18 @@
 	function Persona(persona) {
 		sk.Serializable.call(this);
 
+		/////////////
 		// Properties
-		this.id = persona.id;
+
+		// Handle ID restoring
+		if (persona.id) {
+			this.id = id;
+			setNextIdGen(id+1);
+		}
+		else {
+			this.id = getNextId();	
+		}
+		
 		this.name = persona.name;
 		this.age = persona.age;
 		this.photoUrl = persona.photoUrl;
@@ -39,15 +67,16 @@
 		return this.name;
 	}
 
+	//////////
 	// Exports
 	sk.Persona = Persona;
+
 })(window);
 
 var personas = 
 [
 new SK.Persona(
 {
- id: 1,
  age: 10,
  name: 'Alenka',
  photoUrl: '',
@@ -61,7 +90,6 @@ new SK.Persona(
 }),
 new SK.Persona(
 {
- id: 2,
  age: 21,
  name: 'Marek',
  photoUrl: '',
@@ -75,7 +103,6 @@ new SK.Persona(
 }),
 new SK.Persona(
 {
- id: 3,
  age: 37,
  name: 'Zuzana',
  photoUrl: '',
@@ -89,7 +116,6 @@ new SK.Persona(
 }),
 new SK.Persona(
 {
- id: 4,
  age: 30,
  name: 'Ladislava',
  photoUrl: '',
@@ -104,7 +130,6 @@ new SK.Persona(
 }),
 new SK.Persona(
 {
- id: 5,
  age: 68,
  name: 'Petr',
  photoUrl: '',
@@ -118,7 +143,6 @@ new SK.Persona(
 }),
 new SK.Persona(
 {
- id: 6,
  age: 47,
  name: 'Karel',
  photoUrl: '',
@@ -132,7 +156,6 @@ new SK.Persona(
 }),
 new SK.Persona(
 {
- id: 7,
  age: 55,
  name: 'Hynek',
  photoUrl: '',
