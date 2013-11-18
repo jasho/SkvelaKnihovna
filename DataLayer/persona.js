@@ -9,7 +9,9 @@
 
 	// Constructs persona from the key-value pairs.
 	function Persona(persona) {
-		Serializable.call(this);
+		sk.Serializable.call(this);
+
+		// Properties
 		this.id = persona.id;
 		this.name = persona.name;
 		this.age = persona.age;
@@ -23,14 +25,14 @@
 		this.others = '';
 	}
 
-	Persona.prototype = new Serializable();
+	Persona.prototype = new sk.Serializable();
 	Persona.prototype.constructor = Persona;
 	Persona.prototype.GetName = function() {
 		return this.name;
 	}
 
+	// Exports
 	sk.Persona = Persona;
-	sk.Serializable = Serializable;
 })(window);
 
 var personas = 

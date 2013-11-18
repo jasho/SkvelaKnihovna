@@ -7,9 +7,11 @@
 	var sk = w.SK;
 
 	function Serializable(){
-		Serializable.prototype.Serialize = function(){
+		Serializable.prototype.serialize = function(){
 			return JSON.stringify(this);
 		}
 	}
+
+	sk.Serializable = Serializable;
 	
 })(window);
