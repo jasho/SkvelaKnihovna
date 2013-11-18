@@ -33,10 +33,10 @@ new SK.Relation(
 	placeName: 'Přepážka',
 	name: "Vrácení knihy",
 	// Persona wants at the place
-	services: [{name: "knihovník", reason: "Je velmi dobré mít knihovníka za pultem, spoustu lidí to potěší a ocení!", isChecked: false},
-			   {name: "lístek s potvrzením výpůjčky", reason: "Je velmi dobré vydávat a na něm informovat o možnostech prodloužení a dokdy knihu vrátit", isChecked: false},
-			   {name: "propisky", reason: "lidé ocení možnost vzít si propisku s logem Vaší knihovny jež jim bude Vás připomínat", isChecked: false},
-			   {name: "vizitku", reason: "s kontaktními informacemi o Vaší pobočce", isChecked: false},
+	services: [{name: "Knihovník", reason: "Je velmi dobré mít knihovníka za pultem, spoustu lidí to potěší a ocení!", isChecked: false},
+			   {name: "Lístek s potvrzením výpůjčky", reason: "Je velmi dobré vydávat a na něm informovat o možnostech prodloužení a dokdy knihu vrátit", isChecked: false},
+			   {name: "Propisky", reason: "lidé ocení možnost vzít si propisku s logem Vaší knihovny jež jim bude Vás připomínat", isChecked: false},
+			   {name: "Vizitku", reason: "s kontaktními informacemi o Vaší pobočce", isChecked: false},
 			   {name: "Free Wi-Fi", reason: "Poskytuje možnost všem lidem se připojit na internet i pomocí svého notebooku či mobilu a zpříjemní jim pobyt ve Vaší knihovně", isChecked: false}]
 }),
 new SK.Relation(
@@ -46,10 +46,10 @@ new SK.Relation(
  personaName: 'Alenka',
  placeName: 'Internetovéstránky',
  name: "Prohlížení dětských knížek",
- services: [{name: "kategorie dětských knížek", reason: "O to má Váš malý čtenář největší zájem", isChecked: false},
- 			{name: "vyhledávání", reason: "Aby si najít svojí oblíbenou knihu kterou hledá.", isChecked: false},
- 			{name: "detail knihy", reason: "Detail knihy umožňuje si zjistit o daném svazku více", isChecked: false},
- 			{name: "obrázek", reason: "Ten je přeci pro nejmenší nejdůležitější!", isChecked: false}]
+ services: [{name: "Kategorie dětských knížek", reason: "O to má Váš malý čtenář největší zájem", isChecked: false},
+ 			{name: "Vyhledávání", reason: "Aby si najít svojí oblíbenou knihu kterou hledá.", isChecked: false},
+ 			{name: "Detail knihy", reason: "Detail knihy umožňuje si zjistit o daném svazku více", isChecked: false},
+ 			{name: "Obrázek", reason: "Ten je přeci pro nejmenší nejdůležitější!", isChecked: false}]
 }),
 new SK.Relation(
 {

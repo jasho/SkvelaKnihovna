@@ -334,3 +334,12 @@ textarea {
 .panel-default>.panel-heading:hover{
     background-color: #DDEEF8;
 }
+
+.well h2{
+    margin-top: 0;
+}
+
+.divService{
+    font-size: 14px;
+    margin-bottom: 20px;
+}

@@ -32,7 +32,7 @@ function GetPage(elem){
 
 function ViewPersonas(){
 	for(var i = 0; i < personas.length; i++){
-		$("#personas-list").append('<li><div class="panel panel-personas panel-default kontaktni-mista-async" id="' + personas[i].name + '"><div class="panel-heading"><div class="photo" style="background-image: url(' + personas[i].photoUrl + ')"></div>' + personas[i].name + '</div><div class="panel-body">Věk: ' + personas[i].age + '<br />Vzdělání: ' + personas[i].education + '</div></div></li>');
+		$("#personas-list").append('<li><div class="panel panel-personas panel-default kontaktni-mista-async" id="' + personas[i].name + '"><div class="panel-heading"><div class="photo" style="background-image: url(' + personas[i].photoUrl + ')"></div><strong>' + personas[i].name + '</strong></div><div class="panel-body"><strong>Věk:</strong> ' + personas[i].age + '<br /><strong>Vzdělání:</strong> ' + personas[i].education + '<br /><strong>Návyky:</strong> ' + personas[i].habits + '<br /><strong>Zvládnutí technologií:</strong> ' + personas[i].technologies + '<br /><strong>Koníčky:</strong> ' + personas[i].hobbies + '</div></div></li>');
 	}
 }
 
@@ -45,7 +45,7 @@ function ViewPlaces(){
 function ResultPersona(){
     for(var i = 0; i < personas.length; i++){
         if(chosenPersona == personas[i].name.replace(" ", "")){
-        	$("#result-person").append('<div class="panel panel-personas panel-default kontaktni-mista-async" id="' + personas[i].name + '"><div class="panel-heading"><div class="photo" style="background-image: url(' + personas[i].photoUrl + ')"></div>' + personas[i].name + '</div><div class="panel-body">Věk: ' + personas[i].age + '<br />Vzdělání: ' + personas[i].education + '</div></div>');
+        	$("#result-person").append('<div class="panel panel-personas panel-default kontaktni-mista-async" id="' + personas[i].name + '"><div class="panel-heading"><div class="photo" style="background-image: url(' + personas[i].photoUrl + ')"></div><strong>' + personas[i].name + '</strong></div><div class="panel-body"><strong>Věk:</strong> ' + personas[i].age + '<br /><strong>Vzdělání:</strong> ' + personas[i].education + '<br /><strong>Návyky:</strong> ' + personas[i].habits + '<br /><strong>Zvládnutí technologií:</strong> ' + personas[i].technologies + '<br /><strong>Koníčky:</strong> ' + personas[i].hobbies + '</div></div>');
 		}
 	}
 }

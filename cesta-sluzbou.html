@@ -7,6 +7,8 @@ $(document).ready(function(){
     ResultPersona();
     ResultPlace();
 
+    $(".well").append('<h2 style="margin-bottom:10px;">Zvolte služby, jaké Vaše knihovna na daném kontaktním místě poskytuje</h2>');
+
     var formData = getServices(chosenPersona, chosenPlace);
 
     for(var i = 0; i < formData.length; i++){
@@ -15,12 +17,17 @@ $(document).ready(function(){
             +'</div>');
     }
 
-    $(".well").append('<span class="btn btn-success">Vyhodnotit</span>');    
+    $(".well").append('</div><span style="margin-top:10px;display:inline-block;" class="btn btn-success btn-lg">Vyhodnotit</span>');    
     $(".btn-success").click(function() {
+
+        $("label").attr("style", "font-size:18px;");
         $('.chkService').each(function(index, element) {
             //var i = element.id.replace('chk_', '');
 
+
             $(element).hide();
+            $(".well h2").html("Vaše knihovna na daném kontaktním místě postrádá pro danou personu tyto služby");
+            
 
             if (element.checked) {
                 $("#"+element.id+" + label, #"+element.id+" + label + br").hide();
@@ -32,6 +39,10 @@ $(document).ready(function(){
         });
 
         $(this).hide();
+
+
+
+        $(".well, .panel").attr("style", "box-shadow:0 0 100px #333");
     });
 });
 
@@ -52,7 +63,7 @@ $(document).ready(function(){
 
                 		</div>
                 		<div class="col-md-6" id="form">
-                        <h2>Zvolte služby, jaké Vaše knihovna na daném kontaktním místě poskytuje</h2>
+                        
                             <div class="well">
                                 
 
