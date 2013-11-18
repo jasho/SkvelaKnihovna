@@ -318,3 +318,14 @@ textarea {
 .bx-wrapper .bx-prev {
     left: -60px;
 }
+.photo{
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    background-size: cover;
+    background-position: center center;
+    margin: 10px auto;
+}
+.panel-heading{
+    text-align:  center;
+}

@@ -30,6 +30,6 @@ function GetPage(elem){
 
 function ViewPersonas(){
 	for(var i = 0; i < personas.length; i++){
-		$("#personas-list").append('<li><div class="panel panel-default"><div class="panel-heading">' + personas[i].name + '</div><div class="panel-body">O Frantovi</div></div></li>');
+		$("#personas-list").append('<li><div class="panel panel-default"><div class="panel-heading"><div class="photo" style="background-image: url(' + personas[i].photoUrl + ')"></div>' + personas[i].name + '</div><div class="panel-body">Věk: ' + personas[i].age + '<br />Vzdělání: ' + personas[i].education + '</div></div></li>');
 	}
 }

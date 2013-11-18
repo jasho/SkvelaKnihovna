@@ -98,7 +98,7 @@ new SK.Persona(
  name: 'Marek',
  photoUrl: 'DataLayer/photos/2.jpg',
  city: 'Kolej',
- education: '',
+ education: 'student VŠ',
  social: 'Chytrolín, cestovatel',
  habits: 'Na přednášky pěšky, v knihovně  tráví volný čas mezi přednáškami',
  technologies: 'Používá počítač na velmi dobré uživatelské úrovni, má chytrý mobil',
