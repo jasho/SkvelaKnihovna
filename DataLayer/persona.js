@@ -1,4 +1,4 @@
-(function(w) {
+﻿(function(w) {
 
 	/////////
 	// Locals
@@ -33,9 +33,15 @@
 		/////////////
 		// Properties
 
+		if(typeof(persona) == "string")
+		{
+			persona = this.deserialize(persona);
+		}
+
 		// Handle ID restoring
 		if (persona.id) {
-			this.id = id;
+			var id = persona.id;
+			this.id = id;			
 			setNextIdGen(id+1);
 		}
 		else {

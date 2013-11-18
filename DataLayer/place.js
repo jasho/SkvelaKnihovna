@@ -1,4 +1,4 @@
-(function(w) {
+﻿(function(w) {
 	// Namespace ensuring
 	if (!w.SK) {
 		w.SK = {};
