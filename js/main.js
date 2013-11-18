@@ -32,13 +32,29 @@ function GetPage(elem){
 
 function ViewPersonas(){
 	for(var i = 0; i < personas.length; i++){
-		$("#personas-list").append('<li><div class="panel panel-default kontaktni-mista-async" id="' + personas[i].name + '"><div class="panel-heading"><div class="photo" style="background-image: url(' + personas[i].photoUrl + ')"></div>' + personas[i].name + '</div><div class="panel-body">Věk: ' + personas[i].age + '<br />Vzdělání: ' + personas[i].education + '</div></div></li>');
+		$("#personas-list").append('<li><div class="panel panel-personas panel-default kontaktni-mista-async" id="' + personas[i].name + '"><div class="panel-heading"><div class="photo" style="background-image: url(' + personas[i].photoUrl + ')"></div>' + personas[i].name + '</div><div class="panel-body">Věk: ' + personas[i].age + '<br />Vzdělání: ' + personas[i].education + '</div></div></li>');
 	}
 }
 
 function ViewPlaces(){
 	for(var i = 0; i < places.length; i++){
-		$("#places-list").append('<li><div class="panel panel-default cesta-sluzbou-async" id="' + places[i].name + '"><div class="panel-heading"><div class="photo" style="background-image: url(' + places[i].photoUrl + ')"></div>' + places[i].name + '</div><div class="panel-body">Obsluha: ' + places[i].manager + '</div></div></li>');
+		$("#places-list").append('<li><div class="panel panel-place panel-default cesta-sluzbou-async" id="' + places[i].name + '"><div class="panel-heading"><div class="photo" style="background-image: url(' + places[i].photoUrl + ')"></div>' + places[i].name + '</div><div class="panel-body">' + places[i].manager + '</div></div></li>');
+	}
+}
+
+function ResultPersona(){
+    for(var i = 0; i < personas.length; i++){
+        if(chosenPersona == personas[i].name.replace(" ", "")){
+        	$("#result-person").append('<div class="panel panel-personas panel-default kontaktni-mista-async" id="' + personas[i].name + '"><div class="panel-heading"><div class="photo" style="background-image: url(' + personas[i].photoUrl + ')"></div>' + personas[i].name + '</div><div class="panel-body">Věk: ' + personas[i].age + '<br />Vzdělání: ' + personas[i].education + '</div></div>');
+		}
+	}
+}
+
+function ResultPlace(){
+    for(var i = 0; i < places.length; i++){
+        if(chosenPlace == places[i].name.replace(" ", "")){
+        	$("#result-place").append('<div class="panel panel-place panel-default cesta-sluzbou-async" id="' + places[i].name + '"><div class="panel-heading"><div class="photo" style="background-image: url(' + places[i].photoUrl + ')"></div>' + places[i].name + '</div><div class="panel-body">' + places[i].manager + '</div></div>');
+		}
 	}
 }
 

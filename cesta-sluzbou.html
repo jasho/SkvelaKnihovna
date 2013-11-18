@@ -1,5 +1,9 @@
-<script>
-$("")
+<script type="text/javascript">
+$(document).ready(function(){
+    ResultPersona();
+    ResultPlace();
+});
+
 </script> 
 
  <div class="row">
@@ -10,20 +14,24 @@ $("")
             </div>
             <div class="row">
                 <div class="col-md-12">
- 					<h2>Zvolil jste</h2>
+ 					
  					<div class="row">
                 		<div class="col-md-3" id="result-person">
+                        <h2>Vámi zvolená persona</h2>
 
                 		</div>
-                		<div class="col-md-3" id="line">
+                		<div class="col-md-6" id="form">
+                        <h2>Zvolte služby, jaké Vaše knihovna na daném kontaktním místě poskytuje</h2>
+                            <div class="well">
+                                
+
+                            </div>
 
                 		</div>
                 		<div class="col-md-3" id="result-place">
+                        <h2>Vámi zvolené místo</h2>
 
                 		</div>
                 	</div>
                 </div>  
             </div>
-
-
-            <div class="panel panel-default kontaktni-mista-async" id="' + personas[i].name + '"><div class="panel-heading"><div class="photo" style="background-image: url(' + personas[i].photoUrl + ')"></div>' + personas[i].name + '</div><div class="panel-body">Věk: ' + personas[i].age + '<br />Vzdělání: ' + personas[i].education + '</div></div>
