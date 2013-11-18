@@ -8,6 +8,8 @@ $(document).ready(function(){
     for(var i = 0; i < formData.length; i++){
         $(".well").append('<input type="checkbox" value="' + formData[i].name + '" /> <label for="'+ formData[i].name +'">' + formData[i].name + '</label><br />')
     }
+
+    $(".well").append('<span class="btn btn-success">Vyhodnotit</span>');    
 });
 
 </script> 
