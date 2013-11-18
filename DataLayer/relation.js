@@ -35,8 +35,8 @@ new SK.Relation(
 	// Persona wants at the place
 	services: [{name: "Knihovník", reason: "Je velmi dobré mít knihovníka za pultem, spoustu lidí to potěší a ocení!", isChecked: false},
 			   {name: "Lístek s potvrzením výpůjčky", reason: "Je velmi dobré vydávat a na něm informovat o možnostech prodloužení a dokdy knihu vrátit", isChecked: false},
-			   {name: "Propisky", reason: "lidé ocení možnost vzít si propisku s logem Vaší knihovny jež jim bude Vás připomínat", isChecked: false},
-			   {name: "Vizitku", reason: "s kontaktními informacemi o Vaší pobočce", isChecked: false},
+			   {name: "Propisky", reason: "Lidé ocení možnost vzít si propisku s logem Vaší knihovny jež jim bude Vás připomínat", isChecked: false},
+			   {name: "Vizitku", reason: "S kontaktními informacemi o Vaší pobočce", isChecked: false},
 			   {name: "Free Wi-Fi", reason: "Poskytuje možnost všem lidem se připojit na internet i pomocí svého notebooku či mobilu a zpříjemní jim pobyt ve Vaší knihovně", isChecked: false}]
 }),
 new SK.Relation(
@@ -71,7 +71,7 @@ new SK.Relation(
  services: [{name: "Viditelná otevírací doba", reason: "Je velmi důležitá, zvlášť pro vytížené čtenáře Vaší knihovny, kteří se k Vám chtějí zastavit i v pozdějších hodinách.", isChecked: false},
  			{name: "Telefon", reason: "Pro možnost se okamžitě spojit se svým knihovníkem!", isChecked: false},
  			{name: "E-mail", reason: "Je fajn možnost pro komplikovanější problémy, které nejsou neodkladné!", isChecked: false},
- 			{name: "přehledné stránky", reason: "přehlednost Vašich stránek by měla být na prvním místě.", isChecked: false}]
+ 			{name: "Přehledné stránky", reason: "Přehlednost Vašich stránek by měla být na prvním místě.", isChecked: false}]
 })
 ]
 
