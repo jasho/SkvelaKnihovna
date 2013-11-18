@@ -1,5 +1,8 @@
   <script src="jquery.bxslider/jquery.bxslider.min.js" type="text/javascript"></script>
   <script>
+
+  var chosenPersona = "";
+
   $(document).ready(function(){
 
 	ViewPersonas();
@@ -11,6 +14,10 @@
 	  slideMargin: 10,
 	  infiniteLoop: false
 	});
+
+  $(".panel").click(function(){
+    chosenPersona = $(this).attr("id").replace(" ", "");
+  });
 
   });
   </script>
