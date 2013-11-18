@@ -328,4 +328,9 @@ textarea {
 }
 .panel-heading{
     text-align:  center;
+    cursor: pointer;
+}
+
+.panel-default>.panel-heading:hover{
+    background-color: #DDEEF8;
 }

@@ -1,3 +1,7 @@
+<script>
+$("")
+</script> 
+
  <div class="row">
                 <div class="col-md-12">
                     <h1>Na jakých místech Vaše persony využívají Vaši knihovnu?</h1>
@@ -6,6 +10,20 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
- 
+ 					<h2>Zvolil jste</h2>
+ 					<div class="row">
+                		<div class="col-md-3" id="result-person">
+
+                		</div>
+                		<div class="col-md-3" id="line">
+
+                		</div>
+                		<div class="col-md-3" id="result-place">
+
+                		</div>
+                	</div>
                 </div>  
             </div>
+
+
+            <div class="panel panel-default kontaktni-mista-async" id="' + personas[i].name + '"><div class="panel-heading"><div class="photo" style="background-image: url(' + personas[i].photoUrl + ')"></div>' + personas[i].name + '</div><div class="panel-body">Věk: ' + personas[i].age + '<br />Vzdělání: ' + personas[i].education + '</div></div>
