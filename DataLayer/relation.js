@@ -6,6 +6,11 @@
 
 	var sk = w.SK;
 
+	function Suggestion{
+		this.name = '';
+		this.isChecked = false;		
+	}
+
 	function Relation(relation){
 		sk.Serializable(this);
 
@@ -21,7 +26,6 @@
 	sk.Relation = Relation;
 })(window);
 
-
 var relations =
 [
 new SK.Relation(
@@ -29,6 +33,6 @@ new SK.Relation(
 	personaId: 1,
 	placeId: 1,
 	name: "Vrácení knihy",
-	suggestions: ["WiFi", "Příjemná obsluha"]
+	suggestions: [{name: "WiFi", reason: "Cos it's fucking awesome", isChecked: false}, {name: "Příjemná obsluha", reason: "Jsou blbi!", isChecked: false}]
 }),
 ]
