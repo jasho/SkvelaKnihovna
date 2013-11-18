@@ -85,7 +85,7 @@ new SK.Persona(
 {
  age: 10,
  name: 'Alenka',
- photoUrl: '',
+ photoUrl: 'DataLayer/photos/1.jpg',
  city: 'Město',
  education: 'studuje ZŠ',
  social: 'dítě, premiantka',
@@ -98,7 +98,7 @@ new SK.Persona(
 {
  age: 21,
  name: 'Marek',
- photoUrl: '',
+ photoUrl: 'DataLayer/photos/2.jpg',
  city: 'Kolej',
  education: '',
  social: 'Chytrolín, cestovatel',
@@ -111,7 +111,7 @@ new SK.Persona(
 {
  age: 37,
  name: 'Zuzana',
- photoUrl: '',
+ photoUrl: 'DataLayer/photos/3.jpg',
  city: ' Příměstská oblast – dojíždí, 2x týdně na univerzitu ',
  education: ' VŠ – doktorské ',
  social: ' Bezdětná, úspěšná, ambiciózní ',
@@ -124,7 +124,7 @@ new SK.Persona(
 {
  age: 30,
  name: 'Ladislava',
- photoUrl: '',
+ photoUrl: 'DataLayer/photos/4.jpg',
  city: 'Vesnice ',
  education: 'SŠ ',
  social: ' Na mateřské, vdaná, starostlivá ',
@@ -138,7 +138,7 @@ new SK.Persona(
 {
  age: 68,
  name: 'Petr',
- photoUrl: '',
+ photoUrl: 'DataLayer/photos/5.jpg',
  city: ' Městys ',
  education: 'ZŠ ',
  social: ' Odpočinkový, ženatý ',
@@ -151,7 +151,7 @@ new SK.Persona(
 {
  age: 47,
  name: 'Karel',
- photoUrl: '',
+ photoUrl: 'DataLayer/photos/6.jpg',
  city: 'Město ',
  education: 'VŠ ',
  social: 'Ženatý, pokrokový',
@@ -164,7 +164,7 @@ new SK.Persona(
 {
  age: 55,
  name: 'Hynek',
- photoUrl: '',
+ photoUrl: 'DataLayer/photos/7.jpg',
  city: ' Příměstská oblast – do práce to má hodinu ',
  education: 'SŠ ',
  social: 'Ženatý, má odrostlé děti ',
