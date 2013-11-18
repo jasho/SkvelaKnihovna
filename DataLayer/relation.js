@@ -6,18 +6,15 @@
 
 	var sk = w.SK;
 
-	function Suggestion{
-		this.name = '';
-		this.isChecked = false;		
-	}
-
 	function Relation(relation){
 		sk.Serializable(this);
 
 		this.personaId = relation.personaId;
 		this.placeId = relation.placeId;
+		this.personaName = relation.personaName;
+		this.placeName = relation.placeName;
 		this.name = relation.name;
-		this.suggestions = relation.suggestions;
+		this.services = relation.services;
 	}
 
 	Relation.prototype = new sk.Serializable();
@@ -32,6 +29,8 @@ new SK.Relation(
 {
 	personaId: 1,
 	placeId: 1,
+	personaName: 'Alenka',
+	placeName: 'Přepážka',
 	name: "Vrácení knihy",
 	// Persona wants at the place
 	services: [{name: "knihovník", reason: "Je velmi dobré mít knihovníka za pultem, spoustu lidí to potěší a ocení!", isChecked: false},
@@ -44,16 +43,20 @@ new SK.Relation(
 {
  personaId: 1,
  placeId: 7,
+ personaName: 'Alenka',
+ placeName: 'Internetovéstránky',
  name: "Prohlížení dětských knížek",
  services: [{name: "kategorie dětských knížek", reason: "O to má Váš malý čtenář největší zájem", isChecked: false},
- services: [{name: "vyhledávání", reason: "Aby si najít svojí oblíbenou knihu kterou hledá.", isChecked: false},]
- services: [{name: "detail knihy", reason: "Detail knihy umožňuje si zjistit o daném svazku více", isChecked: false},]
- services: [{name: "obrázek", reason: "Ten je přeci pro nejmenší nejdůležitější!", isChecked: false},]]
+ 			{name: "vyhledávání", reason: "Aby si najít svojí oblíbenou knihu kterou hledá.", isChecked: false},
+ 			{name: "detail knihy", reason: "Detail knihy umožňuje si zjistit o daném svazku více", isChecked: false},
+ 			{name: "obrázek", reason: "Ten je přeci pro nejmenší nejdůležitější!", isChecked: false}]
 }),
 new SK.Relation(
 {
  personaId: 3,
  placeId: 1,
+ personaName: 'Zuzana',
+ placeName: 'Přepážka',
  name: "Vrácení knihy",
  services: [{name: "Příjemná obsluha", reason: "Příjemný usměvavý knihovník či knihovnice vždy zlepší den každému čtenáři", isChecked: false},
  			{name: "Informace o spozdném", reason: "Aby Vaši čtenáři věděli přesně kolik dluží na spozdném.", isChecked: false}]
@@ -62,6 +65,8 @@ new SK.Relation(
 {
  personaId: 3,
  placeId: 7,
+ personaName: 'Zuzana',
+ placeName: 'Internetovéstránky',
  name: "Hledání otevírací doby",
  services: [{name: "Viditelná otevírací doba", reason: "Je velmi důležitá, zvlášť pro vytížené čtenáře Vaší knihovny, kteří se k Vám chtějí zastavit i v pozdějších hodinách.", isChecked: false},
  			{name: "Telefon", reason: "Pro možnost se okamžitě spojit se svým knihovníkem!", isChecked: false},
@@ -71,6 +76,18 @@ new SK.Relation(
 ]
 
 var selectedRelations = [relations[0]];
+
+function getServices(personaName, placeName)
+{
+	for(var i = 0; i < relations.length; i++) {
+		var relation = relations[i];
+
+		if(relation.personaName == personaName && relation.placeName == placeName)
+		{
+			return relation.services;
+		}
+	}
+}
 
 var getUnselectedServicesForPlace = function(placeId) {
 	var unselectedServices = [];
