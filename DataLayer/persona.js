@@ -52,14 +52,12 @@
 		this.age = persona.age;
 		this.photoUrl = persona.photoUrl;
 		this.city = persona.city;
-		this.education = '';
-		this.social = '';
-		this.habits = '';
-		this.technologies = '';
-		this.hobbies = '';
-		this.others = '';
-
-		this.relations = [];
+		this.education = persona.education;
+		this.social = persona.social;
+		this.habits = persona.habits;
+		this.technologies = persona.technologies;
+		this.hobbies = persona.hobbies;
+		this.others = persona.others;
 	}
 
 	//////////////
