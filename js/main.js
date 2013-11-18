@@ -28,6 +28,8 @@ function GetPage(elem){
 	});
 }
 
-function SetActive(elem){
-	$("." + elem.replace("-async", "")).addClass("active")
+function ViewPersonas(){
+	for(var i = 0; i < personas.length; i++){
+		$("#personas-list").append('<li><div class="panel panel-default"><div class="panel-heading">' + personas[i].name + '</div><div class="panel-body">O Frantovi</div></div></li>');
+	}
 }

@@ -311,3 +311,10 @@ textarea {
     webkit-box-shadow: none;
     box-shadow: none;
 }
+.bx-wrapper .bx-next {
+    right: -50px;
+}
+
+.bx-wrapper .bx-prev {
+    left: -60px;
+}
